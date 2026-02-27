@@ -1,0 +1,352 @@
+{
+  "info": {
+    "_postman_id": "58d0a4a8-428c-4fe8-b078-afb5a65d5099",
+    "name": "test_7",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "42278727"
+  },
+  "item": [
+    {
+      "name": "possts",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"fristName\":\"zain\",\r\n    \"Name\":\"zain\",\r\n    \"email\":\"7\",\r\n    \"password\":\"123456\"\r\n\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/users",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n//   \"firstName\": \"zain\",\r\n//   \"lastName\": \"zain\",\r\n//   \"email\": \"zain4@gmail.com\"\r\n//   \"password\": \"1234567\",\r\n//   \"age\": 23 ,\r\n//   \"gender\": \"female\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/users/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "user",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/users/200",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "200"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/users/by-email?email=ali@gmail.com",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "by-email"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "ali@gmail.com"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "singUp",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"userName\":\"ali\",\r\n  \"email\": \"ali4@gmail.com\",\r\n  \"password\": \"1234567\",\r\n  \"age\": 27 ,\r\n  \"gender\": \"male\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/users/singUp",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "singUp"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update users",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"userName\":\"zain\",\r\n  \"email\": \"zain1@gmail.com\",\r\n  \"password\": \"1234567\",\r\n  \"age\": 23 ,\r\n  \"gender\": \"male\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/users/20",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "20"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "posts",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/posts",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "posts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deletedposts",
+      "request": {
+        "method": "DELETE",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "createcomment",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/comment",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "comment"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "comment",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/comment",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "comment"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updatecomment",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"userId\": 3,\r\n  \"content\": \"updated\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/comment/5",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "comment",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "find or createcomment",
+      "request": {
+        "method": "POST",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "searchComments",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/comment/details/2",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "comment",
+            "details",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
